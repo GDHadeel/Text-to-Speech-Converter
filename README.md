@@ -26,9 +26,9 @@ https://github.com/user-attachments/assets/785e1dbd-d3c9-4f33-9075-8447eb0eb3be
 
 ## Code Explanation
 - **HTML**: Structures the page with a text area, language selector, and a button.
-- 
+  
 - **CSS**: Styles the page for a clean, modern look.
-- 
+  
 - **JavaScript**: Uses the Web Speech API to convert text to speech based on the selected language.
 
 
