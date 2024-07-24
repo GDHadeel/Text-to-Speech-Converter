@@ -1,6 +1,6 @@
 # Text-to-Speech-Converter
 
-# Task 6: Build a User Interface for Text-to-Voice Conversion
+# Task 6: Build a User Interface for Text-to-speech Conversion
 
 ## Description
 This project is a simple web application that converts text to speech in both English and Arabic. Users can input text, select the language, and listen to the text being read aloud.
