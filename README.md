@@ -25,60 +25,11 @@ https://github.com/user-attachments/assets/785e1dbd-d3c9-4f33-9075-8447eb0eb3be
 
 
 ## Code Explanation
-
-### HTML Structure
-
-- **`<html>` and `<head>`**:
-  - Standard HTML elements to define the document and include meta tags for character encoding and responsive design.
-
-- **`<title>`**:
-  - Sets the webpage title to "Text to Speech Converter".
-
-- **`<style>`**:
-  - Contains CSS styles that define the look and feel of the application, including background gradients, container styling, and button appearance.
-
-- **`<body>`**:
-  - Contains the main application content inside a container `<div>`.
-
-- **Inside the Container**:
-  - **`<h1>`**: Displays the application title.
-  - **`<textarea>`**: Allows users to input text for conversion.
-  - **`<select>`**: Dropdown menu for selecting the language of the speech output.
-  - **`<button>`**: Button to trigger the speech synthesis.
-
-### CSS Styling
-
-- **`body`**:
-  - Centers the content vertically and horizontally with a gradient background.
-
-- **`.container`**:
-  - Styles the main application container with padding, rounded corners, and a maximum width.
-
-- **`h1`**:
-  - Styles the heading with specific font size and color.
-
-- **`#speak-btn`**:
-  - Styles the button with padding, font size, and a hover effect.
-
-- **`textarea`**:
-  - Styles the text area with padding, border, and dimensions.
-
-- **`select`**:
-  - Styles the dropdown menu with padding, border, and width.
-
-### JavaScript Functionality
-
-- **Event Listener**:
-  - Attaches a click event to the "Listen" button.
-
-- **Text and Language Retrieval**:
-  - Retrieves the text from the `<textarea>` and the selected language from the dropdown.
-
-- **Speech Synthesis**:
-  - Uses the Web Speech API to convert the text to speech in the selected language.
-
-- **Error Handling**:
-  - Alerts the user if no text is entered when clicking the button.
+- **HTML**: Structures the page with a text area, language selector, and a button.
+- 
+- **CSS**: Styles the page for a clean, modern look.
+- 
+- **JavaScript**: Uses the Web Speech API to convert text to speech based on the selected language.
 
 
 ## Usage
