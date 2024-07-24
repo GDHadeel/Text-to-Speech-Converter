@@ -16,9 +16,11 @@ This project is a simple web application that converts text to speech in both En
 Below are two demos of the Text-to-Speech Converter in action:
 
 - **English**:
+  
 https://github.com/user-attachments/assets/cbadeab5-4867-4d22-8b14-0e2ac3d08358
 
 - **Arabic**:
+  
 https://github.com/user-attachments/assets/785e1dbd-d3c9-4f33-9075-8447eb0eb3be
 
 
