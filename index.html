@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #ff5722;
+        }
+        #speak-btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #speak-btn:hover {
+            background-color: #e64a19;
+        }
+        textarea {
+            width: calc(100% - 30px);
+            height: 150px;
+            margin-bottom: 20px;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #e64a19;
+            border-radius: 10px;
+            resize: none;
+            box-sizing: border-box;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 2px solid #e64a19;
+            border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+        <br>
+        <select id="language-select">
+            <option value="en-US">English</option>
+            <option value="ar-SA">Arabic</option>
+        </select>
+        <br>
+        <button id="speak-btn">Listen</button>
+    </div>
+
+    <script>
+        document.getElementById('speak-btn').addEventListener('click', function() {
+            const text = document.getElementById('text-input').value;
+            const language = document.getElementById('language-select').value;
+
+            if (text) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = language;
+
+                speechSynthesis.speak(utterance);
+            } else {
+                alert('Please enter text to convert to speech.');
+            }
+        });
+    </script>
+</body>
+</html>
