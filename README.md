@@ -26,33 +26,59 @@ https://github.com/user-attachments/assets/785e1dbd-d3c9-4f33-9075-8447eb0eb3be
 
 ## Code Explanation
 
-1. **HTML Structure**:
+### HTML Structure
 
-    - The `<textarea>` element allows users to enter text that they want to be converted to speech.
+- **`<html>` and `<head>`**:
+  - Standard HTML elements to define the document and include meta tags for character encoding and responsive design.
 
-    - The `<select>` dropdown lets users choose the language for the speech output (English or Arabic).
+- **`<title>`**:
+  - Sets the webpage title to "Text to Speech Converter".
 
-    - The `<button>` element triggers the speech synthesis when clicked.
+- **`<style>`**:
+  - Contains CSS styles that define the look and feel of the application, including background gradients, container styling, and button appearance.
 
+- **`<body>`**:
+  - Contains the main application content inside a container `<div>`.
 
-2. **CSS Styling**:
+- **Inside the Container**:
+  - **`<h1>`**: Displays the application title.
+  - **`<textarea>`**: Allows users to input text for conversion.
+  - **`<select>`**: Dropdown menu for selecting the language of the speech output.
+  - **`<button>`**: Button to trigger the speech synthesis.
 
-    - The CSS provides a visually appealing design with a gradient background, centered content, and styled buttons and text areas.
+### CSS Styling
 
-    - It ensures the application is responsive and looks good on various screen sizes.
+- **`body`**:
+  - Centers the content vertically and horizontally with a gradient background.
 
+- **`.container`**:
+  - Styles the main application container with padding, rounded corners, and a maximum width.
 
-3. **JavaScript Functionality**:
+- **`h1`**:
+  - Styles the heading with specific font size and color.
 
-    - **Event Listener**: An event listener is attached to the "Listen" button. When clicked, it triggers the text-to-speech functionality.
+- **`#speak-btn`**:
+  - Styles the button with padding, font size, and a hover effect.
 
-    - **Text Retrieval**: The script retrieves the text entered by the user and the selected language from the dropdown.
+- **`textarea`**:
+  - Styles the text area with padding, border, and dimensions.
 
-    - **Speech Synthesis**:
-        - A `SpeechSynthesisUtterance` object is created with the text to be spoken and the selected language.
-        - The `speechSynthesis.speak()` method is used to convert the text into speech.
+- **`select`**:
+  - Styles the dropdown menu with padding, border, and width.
 
-    - **Error Handling**: If no text is entered, an alert prompts the user to enter text.
+### JavaScript Functionality
+
+- **Event Listener**:
+  - Attaches a click event to the "Listen" button.
+
+- **Text and Language Retrieval**:
+  - Retrieves the text from the `<textarea>` and the selected language from the dropdown.
+
+- **Speech Synthesis**:
+  - Uses the Web Speech API to convert the text to speech in the selected language.
+
+- **Error Handling**:
+  - Alerts the user if no text is entered when clicking the button.
 
 
 ## Usage
